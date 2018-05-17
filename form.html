@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bs</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand a1" href="#">某管理系统</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">业务功能</li>
+                                <li>
+                                    <a href="#">信息建立</a>
+                                </li>
+                                <li>
+                                    <a href="#">信息查询</a>
+                                </li>
+                                <li>
+                                    <a href="#">信息管理</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">系统功能</li>
+                                <li>
+                                    <a href="#">设置</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">帮助</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="用户名...">
+                            <input type="password" class="form-control" placeholder="密码...">
+                        </div>
+                        <button type="submit" class="btn btn-default">登陆</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <br>
+                    <li class="active">
+                        <a href="#">首页
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="form.html">form</a>
+                    </li>
+                    <li>
+                        <a href="table.html">table</a>
+                    </li>
+                    <li>
+                        <a href="list.html">list</a>
+                    </li>
+                </ul>
+                <br>
+                <ul class="nav nav-sidebar">
+                    <li>
+                        <a href="">设置</a>
+                    </li>
+                    <li>
+                        <a href="">帮助</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">表单页</h1>
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail4">输入框</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword4">密码框</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="inputState">下拉选择框</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>选项1</option>
+                        <option>选项2</option>
+                        <option>选项3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inlineCheckbox1">checkbox</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleRadios1">radio</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Second default radio
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
